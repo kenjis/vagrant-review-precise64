@@ -31,6 +31,9 @@ apt-get -y install python-software-properties
 echo "[installing Git, Zip]"
 apt-get -y install git zip
 
+echo "[installing rake]"
+apt-get -y install rake
+
 echo "[installing TexLive]"
 add-apt-repository ppa:texlive-backports
 apt-get update && apt-get -y install texlive-lang-cjk
