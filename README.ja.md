@@ -18,6 +18,7 @@
 
 ## 仮想マシンに含まれるもの
 
+* Ruby 1.9.3
 * Tex Live
 * Re:VIEW ... GitHubの最新開発版（~/review/にインストールされる）
 

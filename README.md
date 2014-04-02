@@ -18,6 +18,7 @@ This repository provides a virutal machine which you can run Re:VIEW right now.
 
 ## What's in the Virtual Machine?
 
+* Ruby 1.9.3
 * Tex Live
 * Re:VIEW ... latest development version on GitHub (installed as ~/review/)
 

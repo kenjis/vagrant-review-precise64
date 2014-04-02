@@ -31,7 +31,15 @@ apt-get -y install python-software-properties
 echo "[installing Git, Zip]"
 apt-get -y install git zip
 
-echo "[installing rake]"
+echo "[installing Ruby 1.9.3, rake]"
+apt-get -y install ruby1.9.3
+update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby1.9.3 500 \
+  --slave /usr/bin/ri ri /usr/bin/ri1.9.3 \
+  --slave /usr/bin/irb irb /usr/bin/irb1.9.3 \
+  --slave /usr/bin/erb erb /usr/bin/erb1.9.3 \
+  --slave /usr/bin/rdoc rdoc /usr/bin/rdoc1.9.3
+ln -sf /usr/bin/gem1.9.3 /etc/alternatives/gem
+ln -sf /usr/share/man/man1/gem1.9.3.1.gz /usr/bin/gem.1.gz
 apt-get -y install rake
 
 echo "[installing TexLive]"
